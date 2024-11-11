@@ -44,7 +44,7 @@ function Project({
           </ul>
         </div>
 
-        <a href={gitHubUrl}>
+        <a href={gitHubUrl} target="_blank" ref="noopener noreferrer">
           <Image
             src={imageUrl}
             alt="projects"
