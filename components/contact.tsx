@@ -41,7 +41,7 @@ function Contact() {
         ></textarea>
         <button
           name="message"
-          className="bg-slate-900 w-32 px-5 py-3 rounded-full flex gap-2 items-center justify-center text-white hover:scale-105 group "
+          className="bg-slate-900 w-32 px-5 mb-32 py-3 rounded-full flex gap-2 items-center justify-center text-white hover:scale-105 group "
         >
           Submit{" "}
           <FaPaperPlane className="group-hover:translate-x-1 group-hover:-translate-y-1  transition-all opacity-80" />{" "}
