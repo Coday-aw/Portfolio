@@ -16,7 +16,7 @@ function Contact() {
 
   return (
     <section
-      className="mt-40 sm:mb-28  w-[min(100%, 38rem)] scroll-mt-28"
+      className="mt-40 sm:mb-28 w-[min(100%, 38rem)] scroll-mt-28"
       id="contact"
     >
       {isSubmitted ? (
