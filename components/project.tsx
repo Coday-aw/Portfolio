@@ -26,7 +26,7 @@ function Project({
       ref={ref}
       style={{ scale: scaleProgess, opacity: opacityProgess }}
     >
-      <section className=" bg-gray-100  max-w-[40rem] border border-black/5 overflow-hidden sm:pr-8 relative mt-10 hover:bg-gray-200  ">
+      <section className=" bg-gray-100 flex flex-col sm:flex-row max-w-[40rem] border border-black/5 overflow-hidden mt-10 hover:bg-gray-200 shadow-lg  ">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10  sm:max-w-[50%] flex flex-col h-full ">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 mb-2 leading-relaxed text-gray-700">
@@ -50,13 +50,8 @@ function Project({
             alt="projects"
             quality={95}
             className="
-     absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-lg
-     transition 
-     hover:scale-105
     
-   
-
-
+           h-[300px] sm:h-[300px] w-full object-cover
     "
           />
         </a>

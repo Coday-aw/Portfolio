@@ -48,7 +48,7 @@ export const projectsData = [
       "A movie tracker app that helps you keep track of all the trending,upcoming and top rated movies.",
     tags: ["React", "Next.js", "Tailwind", "Framer-motion"],
     imageUrl: movieTrackerImg,
-    gitHubUrl: "https://movie-tracker-lake.vercel.app",
+    gitHubUrl: "https://movie-tracker-lake.vercel.app/",
   },
 ] as const;
 
