@@ -70,10 +70,10 @@ export const skills = [
         items: [
             { name: "Git", icon: "🔀" },
             { name: "Docker", icon: "🐳" },
-            { name: "Firebase", icon: "🔥" },
-            { name: "MongoDB", icon: "🍃" },
+            { name: "Supabase", icon: "🗄️" },
+            { name: "MongoDB", icon: "🗄️" },
             { name: "CI/CD", icon: "⚙️" },
-            { name: "Figma", icon: "🎯" },
+            { name: "Azure", icon: "☁️" },
         ],
     },
-]; 
+];
