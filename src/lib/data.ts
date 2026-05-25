@@ -8,6 +8,8 @@ export const projects = [
         name: "GymForage",
         description:
             "A PWA application for tracking gym workouts. User can create their own exercises and workouts and track their progress. Built with React and Tailwind CSS and Supabase. Download as an app on your phone using the browser's install feature or save to home screen!",
+        challenge: "Managing complex workout state and real-time sync across devices",
+        solution: "Implemented Supabase real-time subscriptions with optimistic updates for seamless offline-to-online transitions",
         image: GymForAge,
         github: "https://github.com/Coday-aw/Gym-App",
         tags: ["React", "Tailwind CSS", "TypeScript", "Supabase", "Clerk", "Vercel"],
@@ -17,6 +19,8 @@ export const projects = [
         name: "SnipSaver",
         description:
             "A web application that allows users to save and organize their code snippets. Built with Next.js, Supabase, Tailwind CSS and Clerk for authentication.",
+        challenge: "Building a fast, searchable snippet library with syntax highlighting",
+        solution: "Leveraged Next.js server components for filtering and used highlight.js for syntax coloring with client-side caching",
         image: SnipSaver,
         github: "https://github.com/Coday-aw/SnipSaver",
         tags: ["Next.js", "Supabase", "Tailwind CSS", "Clerk", "TypeScript"],
@@ -26,6 +30,8 @@ export const projects = [
         name: "Ecommerce API",
         description:
             "A RESTful API for an e-commerce platform built with ASP.NET Core. It provides endpoints for managing products, orders, and users.",
+        challenge: "Designing scalable endpoints with proper authorization and database optimization",
+        solution: "Implemented JWT authentication, entity relationships with EF Core, and pagination for large datasets",
         image: EcommerceApi,
         github: "https://github.com/Coday-aw/RestApi-with-ASP.NET-Core",
         tags: ["ASP.NET Core", "C#", "Entity Framework Core", "SQL Server", "JWT Auth"],
@@ -35,6 +41,8 @@ export const projects = [
         name: "Movie Tracker",
         description:
             "A web application for tracking movies and TV shows. Built with React and Tailwind CSS.",
+        challenge: "Integrating external API data smoothly with a responsive UI",
+        solution: "Built custom hooks for API calls with error handling and used Framer Motion for delightful transitions",
         image: MovieTracker,
         github: "https://github.com/Coday-aw/MovieTracker",
         tags: ["React", "Tailwind CSS", "JavaScript", "OMDb API", "Framer Motion"],
@@ -75,5 +83,40 @@ export const skills = [
             { name: "CI/CD", icon: "⚙️" },
             { name: "Azure", icon: "☁️" },
         ],
+    },
+];
+
+export const timeline = [
+    {
+        type: "experience",
+        title: "Recreational Educator",
+        company: "Herresta School",
+        date: "2021 - 2025",
+        description: "Plan and lead activities such as sports, games, arts, outdoor trips, and social events for students. Foster a positive and inclusive environment that promotes teamwork, creativity, and personal growth.",
+        icon: "💼",
+    },
+    {
+        type: "education",
+        title: "Frontend Development",
+        company: "KYH ",
+        date: "2023 - 2025",
+        description: "Focused on building responsive and interactive web applications using modern frontend technologies like React, Tailwind CSS, and TypeScript.",
+        icon: "🎓",
+    },
+    {
+        type: "experience",
+        title: "Sales Assistant",
+        company: "JYSK",
+        date: "2023 - 2024",
+        description: "Provided customer-focused sales support, assisted with merchandising and inventory management, and contributed to a positive shopping experience in a fast-paced retail environment.",
+        icon: "🏆",
+    },
+    {
+        type: "education",
+        title: ".NET Full Stack Development",
+        company: "Chas Academy",
+        date: "2025 - 2027",
+        description: "Focused on building clean and scalable backend solutions with C# and ASP.NET Core, while also deepening frontend skills with React. Coursework includes API design, database management, and cloud deployment.",
+        icon: "🚀",
     },
 ];

@@ -25,24 +25,25 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.name}
-              className="glass-card rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:-translate-y-1 group"
+              className="glass-card rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:-translate-y-2 group hover:scale-102 stagger-item animate-fade-in-up"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               <div
                 className={`flex flex-col lg:flex-row ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
                   }`}
               >
                 {/* Project Image */}
-                <div className="relative w-full lg:w-1/2 h-64 sm:h-72 lg:h-96 min-h-[280px] overflow-hidden">
+                <div className="relative w-full lg:w-1/2 h-64 sm:h-72 lg:h-96 min-h-70 overflow-hidden">
                   <Image
                     src={project.image}
                     alt={project.name}
                     fill
-                    className="object-fit group-hover:scale-105 transition-transform duration-700"
+                    className="object-fit transition-transform duration-700"
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     placeholder="blur"
                   />
                   {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-surface/60 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-surface/30" />
+                  <div className="absolute inset-0 bg-linear-to-t from-surface/60 via-transparent to-transparent lg:bg-linear-to-r lg:from-transparent lg:via-transparent lg:to-surface/30" />
                 </div>
 
                 {/* Project Info */}
@@ -53,6 +54,18 @@ export default function Projects() {
                   <p className="text-muted leading-relaxed mb-5 text-sm sm:text-base">
                     {project.description}
                   </p>
+                  
+                  {/* Challenge & Solution */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 p-4 bg-surface-light/20 rounded-lg border border-accent/10 hover-lift transform transition-all duration-300">
+                    <div className="stagger-item">
+                      <p className="text-xs font-mono text-accent uppercase tracking-wider mb-1">🎯 Challenge</p>
+                      <p className="text-xs text-muted leading-relaxed">{project.challenge}</p>
+                    </div>
+                    <div className="stagger-item">
+                      <p className="text-xs font-mono text-primary uppercase tracking-wider mb-1">💡 Solution</p>
+                      <p className="text-xs text-muted leading-relaxed">{project.solution}</p>
+                    </div>
+                  </div>
 
                   {/* Tech Stack Tags */}
                   <div className="flex flex-wrap gap-2 mb-6">

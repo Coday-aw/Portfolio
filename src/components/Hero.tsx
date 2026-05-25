@@ -24,10 +24,27 @@ export default function Hero() {
               <span className="gradient-text">Coday Awahmed</span>
             </h1>
             <h2 className=" text-3xl text-muted leading-relaxed max-w-lg mb-2 animate-fade-in-up delay-200">FullStack Developer (React & C#/ASP.NET)</h2>
-            <p className="text-lg text-muted leading-relaxed max-w-lg mb-8 animate-fade-in-up delay-200">
+            <p className="text-lg text-muted leading-relaxed max-w-lg mb-6 animate-fade-in-up delay-200">
               I am a FullStack Developer with experience in building dynamic web applications using React and Node.js/Express.
               Currently studying .NET and C# to expand my skill and knowledge in backend development and build clean and scalable backend solutions with C# and ASP.NET Core.
             </p>
+            
+            {/* About Section */}
+            <div className="bg-surface-light/30 border border-primary/10 rounded-lg p-6 mb-8 animate-fade-in-up delay-250 backdrop-blur-sm hover-lift transition-all duration-300">
+              <h3 className="text-primary font-semibold mb-3 flex items-center gap-2 animate-rotate-in">
+                <span className="animate-bounce-subtle">✨</span> My Story
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-3 animate-text-reveal">
+             I&apos;m a self-driven fullstack developer based in Sweden, focused on building clean, performant web applications with React and .NET. I enjoy working across the full stack — from pixel-perfect UIs to well-structured APIs — and Im currently deepening my backend skills with C# and ASP.NET Core.
+              </p>
+              <p className="text-sm text-muted leading-relaxed mb-3 animate-text-reveal">
+               I care about writing maintainable code and building things that actually work well for the people using them.
+              </p>
+              <p className="text-sm text-muted leading-relaxed animate-text-reveal">
+                Outside of coding, you&apos;ll find me at the gym, out on a run, or spending time with friends and family.
+              </p>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in-up delay-300">
               <a
                 href="#projects"
@@ -59,11 +76,11 @@ export default function Hero() {
           </div>
 
           {/* Profile Image */}
-          <div className="flex-shrink-0 animate-fade-in-up">
+          <div className="shrink-0 animate-fade-in-up delay-200">
             <div className="relative">
               {/* Glowing ring */}
-              <div className="absolute -inset-1 rounded-full gradient-border opacity-60 blur-sm" />
-              <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-surface-border animate-float">
+              <div className="absolute -inset-1 rounded-full gradient-border opacity-60 blur-sm animate-pulse-glow" />
+              <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-2 border-surface-border animate-float hover:scale-105 transition-transform duration-300">
                 <Image
                   src={profileImage}
                   alt="Coday Ahmed - Developer"

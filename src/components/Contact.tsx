@@ -62,9 +62,9 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           {/* Contact Info */}
           <div className="flex flex-col gap-6">
-            <div className="glass-card rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+            <div className="glass-card rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 animate-fade-in-up hover-lift stagger-item">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center animate-rotate-in">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -82,14 +82,14 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted">Email</p>
-                  <a href="mailto:coday-aw@hotmail.com" className="font-medium">Coday-aw@hotmail.com</a>
+                  <a href="mailto:coday-aw@hotmail.com" className="font-medium hover:text-primary transition-colors">Coday-aw@hotmail.com</a>
                 </div>
               </div>
             </div>
 
-            <div className="glass-card rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+            <div className="glass-card rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 animate-fade-in-up hover-lift stagger-item">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center animate-rotate-in">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -118,14 +118,14 @@ export default function Contact() {
             </div>
 
             {/* Social Links */}
-            <div className="glass-card rounded-2xl p-6 hover:border-primary/30 transition-all duration-300">
+            <div className="glass-card rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 animate-fade-in-up hover-lift stagger-item">
               <p className="text-sm text-muted mb-4">Find me online</p>
               <div className="flex gap-4">
                 <a
                   href="https://github.com/Coday-aw"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-xl bg-surface-light border border-surface-border flex items-center justify-center hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+                  className="w-10 h-10 rounded-xl bg-surface-light border border-surface-border flex items-center justify-center hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 stagger-item"
                   aria-label="GitHub"
                 >
                   <svg
@@ -141,7 +141,7 @@ export default function Contact() {
                   href="https://www.linkedin.com/in/coday-awahmed-58783628b/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-xl bg-surface-light border border-surface-border flex items-center justify-center hover:border-primary/50 hover:bg-primary/10 transition-all duration-300"
+                  className="w-10 h-10 rounded-xl bg-surface-light border border-surface-border flex items-center justify-center hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 hover:scale-110 stagger-item"
                   aria-label="LinkedIn"
                 >
                   <svg
@@ -161,7 +161,7 @@ export default function Contact() {
           <form
             id="contact-form"
             onSubmit={handleSubmit}
-            className="glass-card rounded-2xl p-6 sm:p-8"
+            className="glass-card rounded-2xl p-6 sm:p-8 animate-fade-in-up delay-200 hover-lift"
           >
             <div className="flex flex-col gap-5">
               <div>
@@ -225,7 +225,7 @@ export default function Contact() {
                 id="submit-button"
                 type="submit"
                 disabled={status === "sending"}
-                className="w-full py-3.5 rounded-xl bg-primary hover:bg-primary-dark text-white text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full py-3.5 rounded-xl bg-primary hover:bg-primary-dark text-white text-sm font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 hover:scale-105 active:scale-95"
               >
                 {status === "sending" ? (
                   <>
@@ -240,7 +240,7 @@ export default function Contact() {
                       viewBox="0 0 24 24"
                       strokeWidth={2}
                       stroke="currentColor"
-                      className="w-4 h-4"
+                      className="w-4 h-4 animate-rotate-in"
                     >
                       <path
                         strokeLinecap="round"
