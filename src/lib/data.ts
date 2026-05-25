@@ -5,7 +5,7 @@ import GymForAge from "../assets/GymForAge.png";
 
 export const projects = [
     {
-        name: "GymForAge",
+        name: "GymForage",
         description:
             "A PWA application for tracking gym workouts. User can create their own exercises and workouts and track their progress. Built with React and Tailwind CSS and Supabase. Download as an app on your phone using the browser's install feature or save to home screen!",
         image: GymForAge,
