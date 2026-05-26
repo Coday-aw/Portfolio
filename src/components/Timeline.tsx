@@ -4,7 +4,7 @@ import { timeline } from "@/lib/data";
 
 export default function Timeline() {
   return (
-    <section id="experience" className="relative py-28 overflow-hidden">
+    <section id="timeline" className="relative py-28 overflow-hidden">
       {/* Background effects */}
       <div className="absolute top-1/2 -left-32 w-96 h-96 bg-primary/5 rounded-full blur-[120px]" />
       <div className="absolute top-1/4 -right-32 w-96 h-96 bg-accent/5 rounded-full blur-[120px]" />
