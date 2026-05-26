@@ -20,7 +20,7 @@ export const projects = [
         description:
             "A web application that allows users to save and organize their code snippets. Built with Next.js, Supabase, Tailwind CSS and Clerk for authentication.",
         challenge: "Searching through old files or projects to find code snippets, leading to lost time and productivity",
-        solution: "Leveraged a code library with powerful search and organization features, allowing users to quickly find and manage their snippets, and used Supabase for real-time syncing across devices so snippets are always accessible",
+        solution: "Leveraged a code library with search and organization features, allowing users to quickly find and manage their snippets.",
         image: SnipSaver,
         github: "https://github.com/Coday-aw/SnipSaver",
         tags: ["Next.js", "Supabase", "Tailwind CSS", "Clerk", "TypeScript"],
@@ -107,7 +107,7 @@ export const timeline = [
         type: "experience",
         title: "Sales Assistant",
         company: "JYSK",
-        date: "2023 - Now",
+        date: "2025 - Now",
         description: "Provided customer-focused sales support, assisted with merchandising and inventory management, and contributed to a positive shopping experience in a fast-paced retail environment.",
         icon: "🏆",
     },
