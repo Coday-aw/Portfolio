@@ -8,8 +8,8 @@ export const projects = [
         name: "GymForage",
         description:
             "A PWA application for tracking gym workouts. User can create their own exercises and workouts and track their progress. Built with React and Tailwind CSS and Supabase. Download as an app on your phone using the browser's install feature or save to home screen!",
-        challenge: "Managing complex workout state and real-time sync across devices",
-        solution: "Implemented Supabase real-time subscriptions with optimistic updates for seamless offline-to-online transitions",
+        challenge: "Forgetting exercises and workouts mid-session, leading to lost progress and frustration",
+        solution: "Implemented an intuitive app where users can quickly log sets and reps with a clean interface, and used Supabase for real-time syncing across devices so progress is never lost",
         image: GymForAge,
         github: "https://github.com/Coday-aw/Gym-App",
         tags: ["React", "Tailwind CSS", "TypeScript", "Supabase", "Clerk", "Vercel"],
@@ -19,8 +19,8 @@ export const projects = [
         name: "SnipSaver",
         description:
             "A web application that allows users to save and organize their code snippets. Built with Next.js, Supabase, Tailwind CSS and Clerk for authentication.",
-        challenge: "Building a fast, searchable snippet library with syntax highlighting",
-        solution: "Leveraged Next.js server components for filtering and used highlight.js for syntax coloring with client-side caching",
+        challenge: "Searching through old files or projects to find code snippets, leading to lost time and productivity",
+        solution: "Leveraged a code library with powerful search and organization features, allowing users to quickly find and manage their snippets, and used Supabase for real-time syncing across devices so snippets are always accessible",
         image: SnipSaver,
         github: "https://github.com/Coday-aw/SnipSaver",
         tags: ["Next.js", "Supabase", "Tailwind CSS", "Clerk", "TypeScript"],
