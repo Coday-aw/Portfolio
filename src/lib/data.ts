@@ -107,7 +107,7 @@ export const timeline = [
         type: "experience",
         title: "Sales Assistant",
         company: "JYSK",
-        date: "2023 - 2024",
+        date: "2023 - Now",
         description: "Provided customer-focused sales support, assisted with merchandising and inventory management, and contributed to a positive shopping experience in a fast-paced retail environment.",
         icon: "🏆",
     },
