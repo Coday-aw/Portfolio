@@ -67,10 +67,11 @@ export default function Hero() {
                 </svg>
               </a>
               <a
-                href="#contact"
+                href="/Coday_Awahmed_Resume.pdf"
+                download
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full border border-surface-border text-foreground font-medium text-sm transition-all duration-300 hover:border-primary/50 hover:bg-surface-light/50 hover:-translate-y-0.5"
               >
-                Get In Touch
+                Download Resume
               </a>
             </div>
           </div>
